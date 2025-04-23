@@ -1,11 +1,12 @@
 import { gql } from "@apollo/client";
 
 export const INSERT_USUARIO = gql `
-mutation MyMutation($usu_email: String!, $usu_nome: String!, $usu_isAtivo: Boolean!) {
-  insert_usuarios(objects: 
-    {usu_email: $usu_email, 
-    usu_isAtivo: $usu_isAtivo, 
-    usu_nome: $usu_nome})
+mutation MyMutation($usu_nome: String = "", $usu_isAtivo: Boolean = false, $usu_email: String = "") {
+  insert_usuarios(objects: {usu_nome: $usu_nome, usu_email: $usu_email, usu_isAtivo: $usu_isAtivo}) {
+    returning {
+      usu_id
+    }
+  }
 }`;
 
 export const UPDATE_USUARIO = gql `mutation MyMutation($usu_nome: String!, $usu_id: uuid!, $usu_email: String!, $usu_isAtivo: Boolean!) {
@@ -16,4 +17,4 @@ export const UPDATE_USUARIO = gql `mutation MyMutation($usu_nome: String!, $usu_
   }
 }`
 
-export const SELECT_USUARIO = gql ``
+//export const SELECT_USUARIO = gql ``

@@ -29,10 +29,6 @@ export default function NhostStatus() {
     checkStatus();
   }, []);
 
-  return(
-    <div>
-        <h1>Teste</h1>
-    </div>
-  )
+  return<></>
  
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NhostStatus from './components/NhostStatus';
 import { NhostProvider } from '@nhost/react';
 import nhost from './lib/nhost';
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from './lib/apolloClient';
+import Cadastro from './components/Cadastro';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,8 +16,8 @@ root.render(
   <React.StrictMode>
     <NhostProvider nhost={nhost}>
       <ApolloProvider client={apolloClient}>
-        <App />
         <NhostStatus />
+        <Cadastro />
       </ApolloProvider>
     </NhostProvider>
   </React.StrictMode>
