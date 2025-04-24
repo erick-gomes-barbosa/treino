@@ -8,6 +8,7 @@ import nhost from './lib/nhost';
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from './lib/apolloClient';
 import Cadastro from './components/Cadastro';
+import Lista from './components/Lista';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +18,12 @@ root.render(
     <NhostProvider nhost={nhost}>
       <ApolloProvider client={apolloClient}>
         <NhostStatus />
-        <Cadastro />
+        <div className='lista'>
+          <Lista />
+        </div>
+        <div className='cadastro'>
+          <Cadastro />  
+        </div>
       </ApolloProvider>
     </NhostProvider>
   </React.StrictMode>

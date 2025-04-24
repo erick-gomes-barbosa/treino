@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
-export const GET_USUARIO = gql `
-subscription MySubscription {
+export const SELECT_USUARIOS = gql`
+query MyQuery {
   usuarios {
     usu_id
     usu_nome

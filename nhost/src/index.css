@@ -1,7 +1,19 @@
 body {
   margin: 0;
+  background-color: #fff;
+}
+
+.cadastro{
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+}
+
+.lista {
+  position: fixed;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
 }
