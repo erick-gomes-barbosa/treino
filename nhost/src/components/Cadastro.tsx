@@ -26,7 +26,6 @@ function Cadastro () {
             if(data || data.createUsuario) {
                 console.log("Usuário cadastrado: ", data.createUsuario);
                 alert("Cadastro realizado com sucesso!");
-                
                 setEmail('');
                 setNome('');
             }
@@ -54,7 +53,7 @@ function Cadastro () {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <button
-                        className="border-1 border-[#317a9f] bg-white text-[#317a9f] max-w-fit pl-2 pr-2 rounded-lg mt-3 hover:border-1 hover:border-white hover:bg-[#317a9f] hover:text-white transition" 
+                        className="border-1 border-[#317a9f] bg-white text-[#317a9f] max-w-fit pl-2 pr-2 rounded-lg mt-3 hover:border-1 hover:border-white hover:bg-[#317a9f] hover:text-white transition ease-in-out" 
                         onClick={handleCadastroClick}>Cadastrar</button>
                 </div>
             </div>
