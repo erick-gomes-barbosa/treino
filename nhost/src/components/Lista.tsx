@@ -39,7 +39,7 @@ function Lista() {
     }
     
     return(
-        <div className="absolute ">
+        <div className="flex">
             <div className="fixed bg-[#317a9f] h-full w-83 p-4 mt-3 mb-3 ml-2 rounded-lg max-h-233 overflow-y-auto">
                 <ul className="flex flex-col gap-2">
                     {usuario.map((usuario, index) => (
@@ -60,6 +60,9 @@ function Lista() {
                         </li>
                     ))}
                 </ul>
+            </div>
+            <div className={`absolute left-[calc(350px+1rem)] mt-3`}>
+                {enviarId && <Edicao id={enviarId} onClose={fecharEdicao} />}
             </div>
         </div>
     )

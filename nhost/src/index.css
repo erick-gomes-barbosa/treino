@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #fff;
+  font-family: 'Avenir', Helvetica, sans-serif;
 }
 
 .cadastro{
@@ -12,7 +13,6 @@ body {
 }
 
 .lista {
-  position: fixed;
   margin-top: 3px;
   margin-left: 3px;
   margin-bottom: 3px;

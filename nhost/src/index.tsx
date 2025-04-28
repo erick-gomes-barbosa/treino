@@ -13,7 +13,6 @@ import Edicao from './components/Edicao';
 import id from './components/Lista';
 import fecharEdicao from './components/Lista';
 
-const usu_id: string = id;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -29,12 +28,7 @@ root.render(
         <div className='cadastro'>
           <Cadastro />  
         </div>
-        <div>
-          <Edicao id={id} onClose={fecharEdicao} />
-        </div>
-        <div>
-          Lista.fechar
-        </div>
+
       </ApolloProvider>
     </NhostProvider>
   </React.StrictMode>

@@ -64,8 +64,13 @@ function Edicao( {id, onClose}: props ) {
     }
 
     return(
-        <div className='bg-pink-600 h-10 w-10'>
-
+        <div className='flex flex-col items-center  bg-[#32332d] h-150 w-100 max-w-90 p-4 rounded-xl'>
+            <div className='bg-purple-500 h-10 w-full min-w-fit font-KG'>
+                <div className='font-bold'>
+                    <h1 className='text-2xl'>teste</h1>
+                </div>
+            </div>
+            <div className='bg-blue-500 h-10 w-10 justify-end'></div>
         </div>
     )
     
